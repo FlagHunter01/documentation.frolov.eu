@@ -8,19 +8,19 @@ This is a humble project documenting mildly intresting configurations of common 
 
 <div class="grid cards" markdown>
 
--   :material-debian: **Linux**
+-   [:material-debian: **Linux**](linux/index.md)
     
     ---
 
     This is the bulk of the content, describing common applications like mail or web.
 
--   :material-microsoft-windows: **Windows**
+-   [:material-microsoft-windows: **Windows**](windows/index.md)
 
     ---
 
     Some quality of life enhancements fow Windows clients, like the Yubikey.
 
--   :material-language-markdown: :material-github: **Miscelandious**
+-   [:material-language-markdown: :material-github: **Miscelandious**](misc/index.md)
 
     ---
 
