@@ -66,13 +66,10 @@ theme:
 
   ## Logo and icons
 
-  # TODO: Use a custom image
-  #logo: assets/logo.png
-  # TODO: Use a bundled icon
-  #icon:
-  #  logo: material/library
-  # TODO: favicon (icon in the browsers tab)
-  #favicon: assets/favicon.png
+  icon:
+    logo: material/folder-multiple
+  # Favicon (icon in the browsers tab)
+  favicon: assets/favicon.png
 
   features:
     
