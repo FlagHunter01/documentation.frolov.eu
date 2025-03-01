@@ -33,7 +33,7 @@ gpg --quick-generate-key name@address.com ed25519 auth never
 ``` 
 
 !!! warning "Do **NOT** choose to save the changes"
-    It will destroy the key on your computer, anbd it can't be extracted from the Yubikey.
+    It will destroy the key on your computer, and it can't be retrieved from the Yubikey.
 
 ```bat title="Copy the key to the Yubikey"
 gpg --edit-key name@address.com
