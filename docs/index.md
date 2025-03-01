@@ -1,3 +1,7 @@
+---
+title: Welcome
+description: Welcome page with a summary of the site's content. 
+---
 # Welcome to this documentation project
 
 This is a humble project documenting mildly intresting configurations of common utilities, mainly on Debian.
