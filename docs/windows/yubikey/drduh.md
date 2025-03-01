@@ -1,8 +1,36 @@
-http://drduh.github.io/YubiKey-Guide/
+---
+title: drduh's Yubikey guide
+description: Shameless grab of the amazing guide by drduh on GitHub under the MIT licence
+---
 
-https://github.com/drduh/YubiKey-Guide?tab=readme-ov-file
+!!! note "This is not my work"
+  I copied the content of [drduh's guide](http://drduh.github.io/YubiKey-Guide/) under the MIT licence. 
 
-MITlicence
+  I did it because it fits perfectly my needs regarding Yubikeys and out of fear it would disappear without warning like the 3^rd^ Epistle of Half-Life.
+
+  ```title="MIT licence"
+  The MIT License (MIT)
+
+  Copyright (c) 2016 drduh
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+  ```
 
 This is a guide to using [YubiKey](https://www.yubico.com/products/identifying-your-yubikey/) as a [smart card](https://security.stackexchange.com/questions/38924/how-does-storing-gpg-ssh-private-keys-on-smart-cards-compare-to-plain-usb-drives) for secure encryption, signature and authentication operations.
 
