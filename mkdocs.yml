@@ -19,6 +19,10 @@ nav:
     - linux/index.md
   - Windows:
     - windows/index.md
+    - Yubikey:
+      - windows/yubikey/index.md
+      - SSH with GPG: windows/yubikey/gpg-ssh.md
+      - Miscellaneous: windows/yubikey/misc.md
   - Miscellaneous:
     - misc/index.md
 
