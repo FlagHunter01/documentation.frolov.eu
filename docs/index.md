@@ -1,17 +1,23 @@
-# Welcome to MkDocs
+# Welcome to this documentation project
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is a humble project documenting mildly intresting configurations of common utilities, mainly on Debian.
 
-## Commands
+<div class="grid cards" markdown>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+-   :material-debian: **Linux**
+    
+    ---
 
-## Project layout
+    This is the bulk of the content, describing common applications like mail or web.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+-   :material-microsoft-windows: **Windows**
+
+    ---
+
+    Some quality of life enhancements fow Windows clients, like the Yubikey.
+
+-   :material-languages-markdown: :material-github: **Miscelandious**
+
+    ---
+
+    Concepts and services worth mentionning, like markdown and GitHub.
