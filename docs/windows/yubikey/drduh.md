@@ -4,33 +4,35 @@ description: Shameless grab of the amazing guide by drduh on GitHub under the MI
 ---
 
 !!! note "This is not my work"
-  I copied the content of [drduh's guide](http://drduh.github.io/YubiKey-Guide/) under the MIT licence. 
+    I copied the content of [drduh's guide](http://drduh.github.io/YubiKey-Guide/) under the MIT licence. 
 
-  I did it because it fits perfectly my needs regarding Yubikeys and out of fear it would disappear without warning like the 3^rd^ Epistle of Half-Life.
+    I did it because it fits perfectly my needs regarding Yubikeys and out of fear it would disappear without warning like the 3^rd^ Epistle of Half-Life.
 
-  ```title="MIT licence"
-  The MIT License (MIT)
+    ```title="MIT licence"
+    The MIT License (MIT)
 
-  Copyright (c) 2016 drduh
+    Copyright (c) 2016 drduh
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
-  ```
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+    ```
+
+---
 
 This is a guide to using [YubiKey](https://www.yubico.com/products/identifying-your-yubikey/) as a [smart card](https://security.stackexchange.com/questions/38924/how-does-storing-gpg-ssh-private-keys-on-smart-cards-compare-to-plain-usb-drives) for secure encryption, signature and authentication operations.
 
@@ -133,7 +135,8 @@ Power off, remove internal hard drives and all unnecessary devices, such as the 
 
 Load the operating system and configure networking. Optional hardening steps related to networking can be found [below](#network-considerations).
 
-**Note** If the screen locks on Debian Live, unlock with `user` / `live`
+!!! note
+    If the screen locks on Debian Live, unlock with `user` / `live`
 
 Open terminal and install required software packages.
 
@@ -165,7 +168,8 @@ brew install \
   gnupg yubikey-personalization ykman pinentry-mac wget
 ```
 
-**Note** An additional Python package dependency may need to be installed to use [`ykman`](https://support.yubico.com/support/solutions/articles/15000012643-yubikey-manager-cli-ykman-user-guide) - `pip install yubikey-manager`
+!!! note
+    An additional Python package dependency may need to be installed to use [`ykman`](https://support.yubico.com/support/solutions/articles/15000012643-yubikey-manager-cli-ykman-user-guide) - `pip install yubikey-manager`
 
 **NixOS**
 
@@ -285,7 +289,7 @@ throw-keyids
 ```
 
 !!! note
-  Networking can be disabled for the remainder of the setup.
+    Networking can be disabled for the remainder of the setup.
 
 ### Identity
 
@@ -478,7 +482,7 @@ Create an **encrypted** backup on portable storage to be kept offline in a secur
 The following process is recommended to be repeated several times on multiple portable storage devices, as they are likely to fail over time. As an additional backup measure, [Paperkey](https://www.jabberwocky.com/software/paperkey/) can be used to make a physical copy of key materials for improved durability.
 
 !!! tip
-  The [ext2](https://en.wikipedia.org/wiki/Ext2) filesystem without encryption can be mounted on Linux and OpenBSD. Use [FAT32](https://en.wikipedia.org/wiki/Fat32) or [NTFS](https://en.wikipedia.org/wiki/Ntfs) filesystem for macOS and Windows compatibility instead.
+    The [ext2](https://en.wikipedia.org/wiki/Ext2) filesystem without encryption can be mounted on Linux and OpenBSD. Use [FAT32](https://en.wikipedia.org/wiki/Fat32) or [NTFS](https://en.wikipedia.org/wiki/Ntfs) filesystem for macOS and Windows compatibility instead.
 
 **Linux**
 
@@ -494,7 +498,7 @@ Disk /dev/sdc: 14.9 GiB, 15931539456 bytes, 31116288 sectors
 ```
 
 !!! warning
-  Confirm the destination (`of`) before issuing the following command - it is destructive! This guide uses `/dev/sdc` throughout, but this value may be different on your system.
+    Confirm the destination (`of`) before issuing the following command - it is destructive! This guide uses `/dev/sdc` throughout, but this value may be different on your system.
 
 Zero the header to prepare for encryption:
 
@@ -662,7 +666,7 @@ See [OpenBSD FAQ#14](https://www.openbsd.org/faq/faq14.html#softraidCrypto) for 
 ## Export public key
 
 !!! info "Important"
-  Without the public key, it will **not** be possible to use GnuPG to decrypt nor sign messages. However, YubiKey can still be used for SSH authentication.
+    Without the public key, it will **not** be possible to use GnuPG to decrypt nor sign messages. However, YubiKey can still be used for SSH authentication.
 
 Connect another portable storage device or create a new partition on the existing one.
 
@@ -793,10 +797,10 @@ EOF
 Remove and re-insert YubiKey.
 
 !!! warning
-  Three incorrect *User PIN* entries will cause it to become blocked and must be unblocked with either the *Admin PIN* or *Reset Code*. 
+    Three incorrect *User PIN* entries will cause it to become blocked and must be unblocked with either the *Admin PIN* or *Reset Code*. 
 
 !!! danger
-  Three incorrect *Admin PIN* or *Reset Code* entries will destroy data on YubiKey.
+    Three incorrect *Admin PIN* or *Reset Code* entries will destroy data on YubiKey.
 
 The number of [retry attempts](https://docs.yubico.com/software/yubikey/tools/ykman/OpenPGP_Commands.html#ykman-openpgp-access-set-retries-options-pin-retries-reset-code-retries-admin-pin-retries) can be changed, for example to 5 attempts:
 
@@ -825,7 +829,7 @@ Run `gpg --card-status` to verify results (*Login data* field).
 ## Transfer Subkeys
 
 !!! info "Important" 
-  Transferring keys to YubiKey is a one-way operation which converts the on-disk key into a stub making it no longer usable to transfer to subsequent YubiKeys. Ensure a backup was made before proceeding.
+    Transferring keys to YubiKey is a one-way operation which converts the on-disk key into a stub making it no longer usable to transfer to subsequent YubiKeys. Ensure a backup was made before proceeding.
 
 The Certify key passphrase and Admin PIN are required to transfer keys.
 
@@ -1144,31 +1148,31 @@ ykman openpgp keys set-touch dec on
 ```
 
 !!! note
-  Versions of YubiKey Manager before 5.1.0 use `enc` instead of `dec` for encryption:
+    Versions of YubiKey Manager before 5.1.0 use `enc` instead of `dec` for encryption:
 
-  ```console
-  ykman openpgp keys set-touch enc on
-  ```
+    ```console
+    ykman openpgp keys set-touch enc on
+    ```
 
-  Even older versions of YubiKey Manager use `touch` instead of `set-touch`
+    Even older versions of YubiKey Manager use `touch` instead of `set-touch`
 
-  Signature:
+    Signature:
 
-  ```console
-  ykman openpgp keys set-touch sig on
-  ```
+    ```console
+    ykman openpgp keys set-touch sig on
+    ```
 
-  Authentication:
+    Authentication:
 
-  ```console
-  ykman openpgp keys set-touch aut on
-  ```
+    ```console
+    ykman openpgp keys set-touch aut on
+    ```
 
-  To view and adjust policy options:
+    To view and adjust policy options:
 
-  ```console
-  ykman openpgp keys set-touch -h
-  ```
+    ```console
+    ykman openpgp keys set-touch -h
+    ```
 
 `Cached` or `Cached-Fixed` may be desirable for YubiKey use with email clients.
 
@@ -1185,10 +1189,10 @@ wget https://raw.githubusercontent.com/drduh/config/master/gpg-agent.conf
 ```
 
 !!! info "Important" 
-  The `cache-ttl` options do **not** apply when using YubiKey as a smart card, because the PIN is [cached by the smart card itself](https://dev.gnupg.org/T3362). To clear the PIN from cache (equivalent to `default-cache-ttl` and `max-cache-ttl`), remove YubiKey, or set `forcesig` when editing the card to be prompted for the PIN each time.
+    The `cache-ttl` options do **not** apply when using YubiKey as a smart card, because the PIN is [cached by the smart card itself](https://dev.gnupg.org/T3362). To clear the PIN from cache (equivalent to `default-cache-ttl` and `max-cache-ttl`), remove YubiKey, or set `forcesig` when editing the card to be prompted for the PIN each time.
 
 !!! tip
-  Set `pinentry-program` to `/usr/bin/pinentry-gnome3` for a GUI-based prompt.
+    Set `pinentry-program` to `/usr/bin/pinentry-gnome3` for a GUI-based prompt.
 
 **macOS**
 
@@ -1204,7 +1208,7 @@ To use graphical applications on macOS, [additional setup is required](https://j
 
 Create `$HOME/Library/LaunchAgents/gnupg.gpg-agent.plist` with the following contents:
 
-```
+```xml linenums="1"
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -1233,7 +1237,7 @@ launchctl load $HOME/Library/LaunchAgents/gnupg.gpg-agent.plist
 
 Create `$HOME/Library/LaunchAgents/gnupg.gpg-agent-symlink.plist` with the following contens:
 
-```
+```xml linenums="1"
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/ProperyList-1.0/dtd">
 <plist version="1.0">
@@ -1331,7 +1335,7 @@ The goal is to configure SSH client inside WSL work together with the Windows ag
 See the [WSL agent architecture](media/schema_gpg.png) illustration for an overview.
 
 !!! note 
-  GnuPG forwarding for cryptographic operations is not supported. See [vuori/weasel-pageant](https://github.com/vuori/weasel-pageant) for more information.
+    GnuPG forwarding for cryptographic operations is not supported. See [vuori/weasel-pageant](https://github.com/vuori/weasel-pageant) for more information.
 
 One way to forward is just `ssh -A` (still need to eval weasel to setup local ssh-agent), and only relies on OpenSSH. In this track, `ForwardAgent` and `AllowAgentForwarding` in ssh/sshd config may be involved. However, when using ssh socket forwarding, do not enable `ForwardAgent` in ssh config. See [SSH Agent Forwarding](#ssh-agent-forwarding) for more information. This requires Ubuntu 16.04 or newer for WSL and Kleopatra.
 
@@ -1348,7 +1352,7 @@ RemoteForward <remote SSH socket path> /tmp/S.weasel-pageant
 ```
 
 !!! note
-  The remote SSH socket path can be found with `gpgconf --list-dirs agent-ssh-socket`
+    The remote SSH socket path can be found with `gpgconf --list-dirs agent-ssh-socket`
 
 Add the following to the shell rc file:
 
@@ -1424,7 +1428,7 @@ For `S.gpg-agent.ssh` (see [SSH Agent Forwarding](#ssh-agent-forwarding) for mor
 #### Copy public key
 
 !!! note
-  It is **not** necessary to import the GnuPG public key in order to use SSH only.
+    It is **not** necessary to import the GnuPG public key in order to use SSH only.
 
 Copy and paste the output from `ssh-add` to the server's `authorized_keys` file:
 
@@ -1434,7 +1438,7 @@ ssh-rsa AAAAB4NzaC1yc2EAAAADAQABAAACAz[...]zreOKM+HwpkHzcy9DQcVG2Nw== cardno:000
 ```
 
 !!! abstract "Optional"
-  Save the public key for identity file configuration. By default, SSH attempts to use all the identities available via the agent. It's often a good idea to manage exactly which keys SSH will use to connect to a server, for example to separate different roles or [to avoid being fingerprinted by untrusted ssh servers](https://words.filippo.io/ssh-whoami-filippo-io/). To do this you'll need to use the command line argument `-i [identity_file]` or the `IdentityFile` and `IdentitiesOnly` options in `.ssh/config`.
+    Save the public key for identity file configuration. By default, SSH attempts to use all the identities available via the agent. It's often a good idea to manage exactly which keys SSH will use to connect to a server, for example to separate different roles or [to avoid being fingerprinted by untrusted ssh servers](https://words.filippo.io/ssh-whoami-filippo-io/). To do this you'll need to use the command line argument `-i [identity_file]` or the `IdentityFile` and `IdentitiesOnly` options in `.ssh/config`.
 
 The argument provided to `IdentityFile` is traditionally the path to the _private_ key file (for example `IdentityFile ~/.ssh/id_rsa`). For YubiKey, `IdentityFile` must point to the _public_ key file, and `ssh` will select the appropriate private key from those available via ssh-agent. To prevent `ssh` from trying all keys in the agent, use `IdentitiesOnly yes` along with one or more `-i` or `IdentityFile` options for the target host.
 
@@ -1480,7 +1484,7 @@ debug1: Authentication succeeded (publickey).
 ```
 
 !!! tip
-  To make multiple connections or securely transfer many files, use the [ControlMaster](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Multiplexing) ssh option.
+    To make multiple connections or securely transfer many files, use the [ControlMaster](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Multiplexing) ssh option.
 
 #### Import SSH keys
 
@@ -1516,7 +1520,7 @@ When using the key `pinentry` will be invoked to request the key passphrase. The
 #### SSH agent forwarding
 
 !!! warning 
-  SSH Agent Forwarding can [add additional risk](https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident/#ssh-agent-forwarding-should-be-disabled) - proceed with caution!
+    SSH Agent Forwarding can [add additional risk](https://matrix.org/blog/2019/05/08/post-mortem-and-remediations-for-apr-11-security-incident/#ssh-agent-forwarding-should-be-disabled) - proceed with caution!
 
 There are two methods for ssh-agent forwarding, one is provided by OpenSSH and the other is provided by GnuPG.
 
@@ -1560,7 +1564,7 @@ export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
 After sourcing the shell rc file, `ssh-add -l` will return the correct public key.
 
 !!! note
-  In this process no gpg-agent in the remote is involved, hence `gpg-agent.conf` in the remote is of no use. Also pinentry is invoked locally.
+    In this process no gpg-agent in the remote is involved, hence `gpg-agent.conf` in the remote is of no use. Also pinentry is invoked locally.
 
 ##### Chained forwarding
 
@@ -1590,7 +1594,7 @@ git config --global user.signingkey $KEYID
 ```
 
 !!! info "Important"
-  The `user.email` option must match the email address associated with the PGP identity.
+    The `user.email` option must match the email address associated with the PGP identity.
 
 To sign commits or tags, use the `-S` option.
 
@@ -1607,7 +1611,7 @@ git config --global gpg.program 'C:\Program Files (x86)\GnuPG\bin\gpg.exe'
 Then update the repository URL to `git@github.com:USERNAME/repository`
 
 !!! note
-  For the error `gpg: signing failed: No secret key` - run `gpg --card-status` with YubiKey plugged in and try the git command again.
+    For the error `gpg: signing failed: No secret key` - run `gpg --card-status` with YubiKey plugged in and try the git command again.
 
 ## GnuPG agent forwarding
 
@@ -1618,7 +1622,7 @@ YubiKey can be used sign git commits and decrypt files on remote hosts with GnuP
 On the remote host, edit `/etc/ssh/sshd_config` to set `StreamLocalBindUnlink yes`
 
 !!! abstract "Optional"
-  Without root access on the remote host to edit `/etc/ssh/sshd_config`, socket located at `gpgconf --list-dir agent-socket` on the remote host will need to be removed before forwarding works. See [AgentForwarding GNUPG wiki page](https://wiki.gnupg.org/AgentForwarding) for more information.
+    Without root access on the remote host to edit `/etc/ssh/sshd_config`, socket located at `gpgconf --list-dir agent-socket` on the remote host will need to be removed before forwarding works. See [AgentForwarding GNUPG wiki page](https://wiki.gnupg.org/AgentForwarding) for more information.
 
 Import the public key on the remote host. On the local host, copy the public keyring to the remote host:
 
@@ -1664,10 +1668,10 @@ extra-socket /run/user/1000/gnupg/S.gpg-agent.extra
 ```
 
 !!! note
-  The pinentry program starts on the *local* host, not remote.
+    The pinentry program starts on the *local* host, not remote.
 
 !!! info "Important"
-  Any pinentry program except `pinentry-tty` or `pinentry-curses` may be used. This is because local `gpg-agent` may start headlessly (by systemd without `$GPG_TTY` set locally telling which tty it is on), thus failed to obtain the pin. Errors on the remote may be misleading saying that there is *IO Error*. (Yes, internally there is actually an *IO Error* since it happens when writing to/reading from tty while finding no tty to use, but for end users this is not friendly.)
+    Any pinentry program except `pinentry-tty` or `pinentry-curses` may be used. This is because local `gpg-agent` may start headlessly (by systemd without `$GPG_TTY` set locally telling which tty it is on), thus failed to obtain the pin. Errors on the remote may be misleading saying that there is *IO Error*. (Yes, internally there is actually an *IO Error* since it happens when writing to/reading from tty while finding no tty to use, but for end users this is not friendly.)
 
 See [Issue 85](https://github.com/drduh/YubiKey-Guide/issues/85) for more information and troubleshooting.
 
@@ -1686,7 +1690,7 @@ Host third
 You should change the path according to `gpgconf --list-dirs agent-socket` on *remote* and *third*.
 
 !!! note
-  On *local* you have `S.gpg-agent.extra` whereas on *remote* and *third*, you only have `S.gpg-agent`
+    On *local* you have `S.gpg-agent.extra` whereas on *remote* and *third*, you only have `S.gpg-agent`
 
 ### Using multiple YubiKeys
 
@@ -1731,14 +1735,14 @@ YubiKey can be used to decrypt and sign emails and attachments using [Thunderbir
 Follow [instructions on the mozilla wiki](https://wiki.mozilla.org/Thunderbird:OpenPGP:Smartcards#Configure_an_email_account_to_use_an_external_GnuPG_key) to setup your YubiKey with your thunderbird client using the external gpg provider.
 
 !!! info "Important" 
-  Thunderbird [fails](https://github.com/drduh/YubiKey-Guide/issues/448) to decrypt emails if the ASCII `armor` option is enabled in your `~/.gnupg/gpg.conf`. If you see the error `gpg: [don't know]: invalid packet (ctb=2d)` or `message cannot be decrypted (there are unknown problems with this encrypted message)` simply remove this option from your config file.
+    Thunderbird [fails](https://github.com/drduh/YubiKey-Guide/issues/448) to decrypt emails if the ASCII `armor` option is enabled in your `~/.gnupg/gpg.conf`. If you see the error `gpg: [don't know]: invalid packet (ctb=2d)` or `message cannot be decrypted (there are unknown problems with this encrypted message)` simply remove this option from your config file.
 
 #### Mailvelope
 
 [Mailvelope](https://www.mailvelope.com/en) allows YubiKey to be used with Gmail and others.
 
 !!! info "Important"
-  Mailvelope [does not work](https://github.com/drduh/YubiKey-Guide/issues/178) with the `throw-keyids` option set in `gpg.conf`
+    Mailvelope [does not work](https://github.com/drduh/YubiKey-Guide/issues/178) with the `throw-keyids` option set in `gpg.conf`
 
 On macOS, install gpgme using Homebrew:
 
@@ -1779,7 +1783,7 @@ Edit the file to enable options `pgp_default_key`, `pgp_sign_as` and `pgp_autosi
 `source` the file in `muttrc`
 
 !!! info "Important"
-  `pinentry-tty` set as the pinentry program in `gpg-agent.conf` is reported to cause problems with Mutt TUI, because it uses curses. It is recommended to use `pinentry-curses` or other graphic pinentry program instead.
+    `pinentry-tty` set as the pinentry program in `gpg-agent.conf` is reported to cause problems with Mutt TUI, because it uses curses. It is recommended to use `pinentry-curses` or other graphic pinentry program instead.
 
 ### Keyserver
 
@@ -2042,7 +2046,7 @@ sudo service rng-tools restart
 ### Enable KDF
 
 !!! note
-  This feature may not be compatible with older GnuPG versions, especially mobile clients. These incompatible clients will not function because the PIN will always be rejected.
+    This feature may not be compatible with older GnuPG versions, especially mobile clients. These incompatible clients will not function because the PIN will always be rejected.
 
 This step must be completed before changing PINs or moving keys or an error will occur: `gpg: error for setup KDF: Conditions of use not satisfied`
 
@@ -2169,7 +2173,7 @@ Now connect to a network.
 
 - If it still fails, it may be useful to stop the background `sshd` daemon process service on the server (e.g. using `sudo systemctl stop sshd`) and instead start it in the foreground with extensive debugging output, using `/usr/sbin/sshd -eddd`. Note that the server will not fork and will only process one connection, therefore has to be re-started after every `ssh` test.
 
-- If you receive the error, `Please insert the card with serial number` see [Using Multiple Keys](#using-multiple-keys).
+- If you receive the error, `Please insert the card with serial number` see [Using Multiple Keys](#using-multiple-yubikeys)
 
 - If you receive the error, `There is no assurance this key belongs to the named user` or `encryption failed: Unusable public key` or `No public key` use `gpg --edit-key` to set `trust` to `5 = I trust ultimately`
 
