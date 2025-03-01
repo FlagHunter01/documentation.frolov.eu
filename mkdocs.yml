@@ -23,6 +23,7 @@ nav:
       - windows/yubikey/index.md
       - SSH with GPG: windows/yubikey/gpg-ssh.md
       - Miscellaneous: windows/yubikey/misc.md
+      - drduh's Yubikey guide: windows/yubikey/drduh.md
   - Miscellaneous:
     - misc/index.md
 
