@@ -19,6 +19,8 @@ nav:
     - linux/index.md
   - Windows:
     - windows/index.md
+  - Miscellaneous:
+    - misc/index.md
 
 ### Theme customization
 
