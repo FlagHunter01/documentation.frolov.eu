@@ -20,7 +20,7 @@ This is a humble project documenting mildly intresting configurations of common 
 
     Some quality of life enhancements fow Windows clients, like the Yubikey.
 
--   :material-languages-markdown: :material-github: **Miscelandious**
+-   :material-language-markdown: :material-github: **Miscelandious**
 
     ---
 
