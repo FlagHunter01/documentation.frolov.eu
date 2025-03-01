@@ -33,5 +33,6 @@ You can use the `gpg-card` facility to customize your Yubikey.
 
 - `name` allows you to asign your real name to a field in the card
 -   `salutation` is used to define your genrer ? ([documentation](https://www.gnupg.org/documentation/manuals/gnupg24/gpg-card.1.html))
+    
     !!! quote 
-        SALUTATION [--clear] SALUT Change the salutation info for the card. This info can be used by applications for a personalized greeting. The option --clear removes this data object. GnuPG does not use this info.
+        - **SALUTATION** [--clear]<br>**SALUT**<br>Change the salutation info for the card. This info can be used by applications for a personalized greeting. The option --clear removes this data object. GnuPG does not use this info.
