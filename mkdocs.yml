@@ -29,6 +29,7 @@ nav:
     - Markdown:
       - Introcution: misc/md/main.md
       - MkDocs: misc/md/mkdocs.md
+    - GitHub: msic/gh/main.md
 
 ### Theme customization
 
