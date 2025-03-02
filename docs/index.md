@@ -25,3 +25,5 @@ This is a humble project documenting mildly intresting configurations of common 
     ---
 
     Concepts and services worth mentionning, like markdown and GitHub.
+
+</div>
