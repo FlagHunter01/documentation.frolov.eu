@@ -27,7 +27,7 @@ nav:
   - Miscellaneous:
     - misc/index.md
     - Markdown:
-      - Introcution: misc/md/index.md
+      - Introcution: misc/md/main.md
       - MkDocs: misc/md/mkdocs.md
 
 ### Theme customization
