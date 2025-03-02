@@ -83,3 +83,15 @@ Markdown would render just like the page you're reading now.<br> In fact, it was
 </div>
 
 *[WYSIWYG]: What You See Is What You Get
+
+## How to write with markdown ?
+
+Read my cheat sheet to learn virtually everything you need to know about writing in markdown in **one (1) minute**.
+
+[Read the cheat sheet](https://flaghunter01.github.io/mkdocs-yml/en/guide/setup.html#using-markdown){ .md-button }
+
+## Where to write with markdown ?
+
+MkDocs. If you want to publish your docs, it's MkDocs. Otherwise, you can use it literally everywhere. 
+
+Go to the next page to learn more about MkDocs.
