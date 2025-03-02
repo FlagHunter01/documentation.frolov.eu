@@ -26,6 +26,9 @@ nav:
       - drduh's Yubikey guide: windows/yubikey/drduh.md
   - Miscellaneous:
     - misc/index.md
+    - Markdown:
+      - Introcution: misc/md/index.md
+      - MkDocs: misc/md/mkdocs.md
 
 ### Theme customization
 
