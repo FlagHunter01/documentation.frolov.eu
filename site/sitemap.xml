@@ -2,42 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://documentation.frolov.eu/index.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/linux/index.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/misc/index.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://documentation.frolov.eu/misc/gh/main.html</loc>
+         <lastmod>2025-03-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://documentation.frolov.eu/misc/md/main.html</loc>
+         <lastmod>2025-03-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://documentation.frolov.eu/misc/md/mkdocs.html</loc>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/windows/index.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/windows/yubikey/index.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/windows/yubikey/drduh.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/windows/yubikey/gpg-ssh.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://documentation.frolov.eu/windows/yubikey/misc.html</loc>
-         <lastmod>2025-03-02</lastmod>
+         <lastmod>2025-03-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
