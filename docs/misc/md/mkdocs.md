@@ -3,7 +3,7 @@ title: MkDocs
 description: Introduction to MkDocs
 ---
 
-## Why MkDocs ?
+**Why MkDocs ?**
 
 MkDocs is probably the fastest **and** easiest way to generate HTML from your notes. 
 

@@ -5,6 +5,8 @@ description: Miscellaneous tips about the Yubikey
 
 # Miscellaneous
 
+Various tips in no particular order. 
+
 ## Reset PGP application
 
  - Download the deprecated [Yubikey Manager](https://www.yubico.com/support/download/yubikey-manager/)

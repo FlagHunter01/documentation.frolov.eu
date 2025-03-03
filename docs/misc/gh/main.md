@@ -3,7 +3,7 @@ title: GitHub
 description: Basics of working with GitHub from the command line
 ---
 
-## Objective
+
 
 Set up GitHub on your local Linux machine to work from the command line.
 

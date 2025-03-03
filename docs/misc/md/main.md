@@ -3,7 +3,7 @@ title: Markdown
 description: Brief presentation of the markdown language and its benefits
 ---
 
-## What is markdown and why should you care ?
+**What is markdown and why should you care ?**
 
 Markdown is a ==lightweight== markup language used to format text.
 Why is it better than more conventional writing applications ?

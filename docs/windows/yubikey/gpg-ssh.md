@@ -5,8 +5,6 @@ description: Guide on how to use a Yubikey on Windows to authenticate SSH sessio
 
 # SSH with GPG via Yubikey
 
-## Objective
-
 Establish authentication with GPG between a Windows client and a Linux server via yubikey. 
 
 ## Requirements

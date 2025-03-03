@@ -7,19 +7,19 @@ This section is about the Yubikey, a security key that enhances both security an
 
 <div class="grid cards" markdown>
 
--   **:octicons-terminal-16: SSH via GPG**
+-   **[:octicons-terminal-16: SSH via GPG](gpg-ssh.md)**
     
     ---
 
     Guide for setting up SSH authentication with GPG keys via the Yubikey
 
--   **:fontawesome-solid-gears: Miscellaneous**
+-   **[:fontawesome-solid-gears: Miscellaneous](misc.md)**
 
     ---
 
     Different commands for Yubikey personalization
 
--   **drduh's Yubikey guide**
+-   **[drduh's Yubikey guide](drduh.md)**
     
     ---
 
