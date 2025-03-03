@@ -10,6 +10,8 @@ site_url: https://documentation.frolov.eu/
 repo_url: https://github.com/FlagHunter01/documentation.frolov.eu/
 #  GitHub repo name
 repo_name: Documentation
+# Location of the files on the repo
+edit_uri: edit/main/docs
 
 ### Navigation
 
