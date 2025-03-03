@@ -29,7 +29,7 @@ nav:
   - Miscellaneous:
     - misc/index.md
     - Markdown:
-      - Introcution: misc/md/main.md
+      - Introduction: misc/md/main.md
       - MkDocs: misc/md/mkdocs.md
     - GitHub: misc/gh/main.md
 
