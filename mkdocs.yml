@@ -160,15 +160,7 @@ plugins:
   #    date_from_meta:
   #      as_creation: date
   # Git dates
-  - git-revision-date-localized:
-      # Show the creation date along with the last modif date
-      enable_creation_date: true
-  # Git commiters 
-  - git-committers:
-    # Repo URL
-      repository: FlagHunter01/documentation.frolov.eu
-    # Branch
-      branch: main
+  - git-revision-date-localized
   # Offline
   - offline
     
