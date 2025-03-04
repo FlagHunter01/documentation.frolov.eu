@@ -22,6 +22,7 @@ nav:
     - Monitoring:
       - linux/monitoring/index.md
       - etckeeper: linux/monitoring/etckeeper.md
+      - Python web graph: https://flaghunter01.github.io/linux-monitoring/
   - Windows:
     - windows/index.md
     - Yubikey:
