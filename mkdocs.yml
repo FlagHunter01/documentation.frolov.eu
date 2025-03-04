@@ -19,7 +19,7 @@ nav:
   - Home: index.md
   - Linux:
     - linux/index.md
-    Monitoring:
+    - Monitoring:
       - linux/monitoring/index.md
       - etckeeper: linux/monitoring/etckeeper.md
   - Windows:
