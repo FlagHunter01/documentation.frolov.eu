@@ -19,6 +19,9 @@ nav:
   - Home: index.md
   - Linux:
     - linux/index.md
+    Monitoring:
+      - linux/monitoring/index.md
+      - etckeeper: linux/monitoring/etckeeper.md
   - Windows:
     - windows/index.md
     - Yubikey:
