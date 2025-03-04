@@ -1,6 +1,14 @@
 ---
 title: Linux
-description: Index of the Linux tab.
+description: All the guides regarding the Linux system or its associated tools.
 ---
 
-!!! note "Under construction, content will be added shortly"
+<div class="grid cards" markdown>
+
+-   **[Monitoring](monitoring/index.md)
+
+    ---
+
+    Guides for tools reguarding monitoring and backing up the system.
+
+</div>
