@@ -21,6 +21,7 @@ How to setup DMARC to use with Exim4.
 
 - Openssl
 - Exim4
+- Configured Bind9
 
 ## Guide
 
