@@ -19,6 +19,9 @@ nav:
   - Home: index.md
   - Linux:
     - linux/index.md
+    - Mail:
+      - linux/mail/index.md
+      - DMARC: dmarc.md
     - Monitoring:
       - linux/monitoring/index.md
       - etckeeper: linux/monitoring/etckeeper.md
