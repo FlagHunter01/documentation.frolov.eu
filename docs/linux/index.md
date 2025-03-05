@@ -1,6 +1,14 @@
 ---
 title: Linux
-description: Index of the Linux tab.
+description: This section contains all the guides regarding the Linux OS. This is the bulk of my documentation. 
 ---
 
-!!! note "Under construction, content will be added shortly"
+<div class="grid cards" markdown>
+
+-   **[:material-email: Mail](mail/index.md)**
+
+    ---
+
+    Guides regarding mail handling, reading and signing.
+
+</div>
