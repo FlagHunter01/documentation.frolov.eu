@@ -10,3 +10,5 @@ description: Guides regarding mail handling, reading and signing.
     ---
 
     How to set up DMARC for your mail server.
+
+</div>
