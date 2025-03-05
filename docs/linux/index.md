@@ -11,4 +11,10 @@ description: This section contains all the guides regarding the Linux OS. This i
 
     Guides regarding mail handling, reading and signing.
 
+-   **[:material-monitor-dashboard: Monitoring](monitoring/index.md)**
+
+    ---
+
+    Guides for tools reguarding monitoring and backing up the system.
+    
 </div>
