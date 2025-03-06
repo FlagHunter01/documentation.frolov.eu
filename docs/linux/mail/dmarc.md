@@ -56,6 +56,9 @@ Add the DKIM field to Bind's configuration (customize `domain.com`). Replace `xx
 dkim-ed25519._domainkey.domain.com. IN TXT "v=DKIM1; k=ed25519; t=y; p=xxx"
 ```
 
+!!! info "`t=y`"
+    This is a "testing" tag. Replace it with `t=s` once you have confirmed that DKIM works as intended.
+
 !!! warning "Don't forget to increment the serial"
 
 Restart Exim and Bind.
