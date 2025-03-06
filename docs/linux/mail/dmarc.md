@@ -38,22 +38,22 @@ How to setup DMARC to use with Exim4.
 Genrate a key and export it in a format suitable for DNS records:
 
 ```
-openssl genpkey -algorithm ed25519 -out dkim_ed25519.private
-openssl pkey -outform DER -pubout -in dkim_ed25519.private | tail -c +13 | base64
+openssl genpkey -algorithm ed25519 -out dkim-ed25519.private
+openssl pkey -outform DER -pubout -in dkim-ed25519.private | tail -c +13 | base64
 ```
 
 In the Exim configuration, in the transport section in `remote_smtp` (customize `domain.com`):
 
 ```
   dkim_domain = domain.com
-  dkim_selector = dkim_ed25519
-  dkim_private_key = /etc/exim4/dkim_ed25519.private
+  dkim_selector = dkim-ed25519
+  dkim_private_key = /etc/exim4/dkim-ed25519.private
 ```
 
 Add the DKIM field to Bind's configuration (customize `domain.com`). Replace `xxx` with the previously exported key:
 
 ```
-dkim_ed25519._domainkey.domain.com. IN TXT "v=DKIM1; k=ed25519; t=y; p=xxx"
+dkim-ed25519._domainkey.domain.com. IN TXT "v=DKIM1; k=ed25519; t=y; p=xxx"
 ```
 
 !!! warning "Don't forget to increment the serial"
