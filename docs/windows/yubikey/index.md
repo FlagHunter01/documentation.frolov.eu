@@ -1,6 +1,9 @@
 ---
 title: Yubikey
 description: Index page of the Yubikey section.
+hide:
+    - navigation
+    - toc
 ---
 
 This section is about the Yubikey, a security key that enhances both security and quality of life. 

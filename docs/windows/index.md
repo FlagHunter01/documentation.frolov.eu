@@ -1,6 +1,9 @@
 ---
 title: Windows
-description: Index of the Windows tab. 
+description: Index of the Windows tab.
+hide:
+    - navigation
+    - toc 
 ---
 
 <div class="grid cards" markdown>

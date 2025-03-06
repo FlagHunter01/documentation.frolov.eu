@@ -1,6 +1,9 @@
 ---
 title: Welcome
 description: Welcome page with a summary of the site's content. 
+hide:
+    - navigation
+    - toc
 ---
 # Welcome to this documentation project
 

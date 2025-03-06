@@ -1,6 +1,9 @@
 ---
 title: Monitoring
 description: Guides for tools reguarding monitoring and backing up the system.
+hide:
+    - navigation
+    - toc
 ---
 
 <div class="grid cards" markdown>

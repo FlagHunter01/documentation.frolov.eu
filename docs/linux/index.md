@@ -1,6 +1,9 @@
 ---
 title: Linux
-description: This section contains all the guides regarding the Linux OS. This is the bulk of my documentation. 
+description: This section contains all the guides regarding the Linux OS. This is the bulk of my documentation.
+hide:
+    - navigation
+    - toc
 ---
 
 <div class="grid cards" markdown>

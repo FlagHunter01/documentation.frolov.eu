@@ -1,6 +1,9 @@
 ---
 title: Mail
 description: Guides regarding mail handling, reading and signing.
+hide:
+    - navigation
+    - toc
 ---
 
 <div class="grid cards" markdown>

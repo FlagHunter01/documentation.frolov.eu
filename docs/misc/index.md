@@ -1,6 +1,9 @@
 ---
 title: Miscellaneous
 description: Index of the Miscellaneous tab.
+hide:
+    - navigation
+    - toc
 ---
 
 <div class="grid cards" markdown>
