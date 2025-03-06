@@ -9,7 +9,7 @@ How to setup DMARC to use with Exim4.
 
 ### SPF
 
-!!! note "This section is missing"
+- My own brain
 
 ### DKIM
 
@@ -31,7 +31,15 @@ How to setup DMARC to use with Exim4.
 
 ### SPF
 
-!!! note "This section is missing"
+Add the following to your Bind configuration:
+
+```
+TXT "v=spf1 ip4:<x.x.x.x> include:<secondarymx.com> -all"
+```
+
+!!! warning "Don't forget to increment the serial"
+
+Restart Bind.
 
 ### DKIM
 
