@@ -21,7 +21,7 @@ This is a humble project documenting mildly intresting configurations of common 
 
     ---
 
-    Some quality of life enhancements fow Windows clients, like the Yubikey.
+    Some quality of life enhancements for Windows clients, like the Yubikey.
 
 -   [:material-language-markdown: :material-github: **Miscelandious**](misc/index.md)
 
