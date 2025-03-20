@@ -49,6 +49,8 @@ Genrate a key and export it in a format suitable for DNS records:
 openssl genpkey -algorithm ed25519 -out dkim-ed25519.private
 openssl pkey -outform DER -pubout -in dkim-ed25519.private | tail -c +13 | base64
 ```
+!!! warning "Some clients, like Google, still don't support eliptic curves at the time of writing."
+    You can generate an RSA key instead or better yet, generate both.
 
 In the Exim configuration, in the transport section in `remote_smtp` (customize `domain.com`):
 
