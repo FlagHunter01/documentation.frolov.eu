@@ -19,7 +19,7 @@ How to setup DMARC to use with Exim4.
 
 ### DMARC
 
-!!! note "This section is missing"
+- [Google Workspace Admin Help](https://support.google.com/a/answer/2466580?hl=en)
 
 ## Requirements
 
@@ -87,4 +87,15 @@ Restart Exim and Bind.
 
 ### DMARC
 
-!!! note "This section is missing"
+Add the DMARC field to Bind's configuration (customize omain.com`):
+
+```
+_dmarc.domain.com       TXT "v=DMARC1; p=reject; rua=mailto:postmaster@domain.com"
+```
+
+!!! warning "Don't forget to increment the serial"
+
+Restart Bind. 
+
+??? info "Time to take effect"
+    Remember that these changes need to go through DNS propagation and are not instantaneous.
