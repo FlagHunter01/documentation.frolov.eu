@@ -85,6 +85,6 @@ Restart Exim and Bind.
     Remember that these changes need to go through DNS propagation and are not instantaneous.
 
 
-### DMARK
+### DMARC
 
 !!! note "This section is missing"
