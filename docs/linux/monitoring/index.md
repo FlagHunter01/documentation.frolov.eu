@@ -8,12 +8,12 @@ hide:
 
 <div class="grid cards" markdown>
 
--   **[Prometheus & Grafana](prom/index.md)**
+-   **[:simple-prometheus: Prometheus & Grafana](prom/index.md)**
 
     ---
 
     Powereful tools allowing you to collect and display any metric you want, about anything. 
-    
+
 -   **[etckeeper](etckeeper.md)**
 
     ---
