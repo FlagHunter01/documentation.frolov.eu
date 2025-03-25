@@ -10,7 +10,7 @@ Guides and hacks about Prometheus & Grafana
 
 <div class="grid cards" markdown>
 
--   **[Quick start](config.md)**
+-   **[Basic configuration](config.md)**
 
     ---
 
