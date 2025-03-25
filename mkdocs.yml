@@ -24,6 +24,10 @@ nav:
       - DMARC: linux/mail/dmarc.md
     - Monitoring:
       - linux/monitoring/index.md
+      - Prometheus & Grafana:
+        - linux/monitoring/prom/index.md
+        - Basic configuration: linux/monitoring/prom/config.md
+        - Sneaking metrics through node_exporter: linux/monitoring/prom/ne.md
       - etckeeper: linux/monitoring/etckeeper.md
       - Python web graph: https://flaghunter01.github.io/linux-monitoring/
   - Windows:
