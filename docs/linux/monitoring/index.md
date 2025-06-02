@@ -8,6 +8,12 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   **[fail2ban](f2b.md)**
+
+    ---
+
+    Life-changing tool allowing you to block IP addresses based on their logged suspicious activity. 
+
 -   **[:simple-prometheus: Prometheus & Grafana](prom/index.md)**
 
     ---
