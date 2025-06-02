@@ -30,6 +30,6 @@ hide:
 
     ---
 
-    A very basic python script I wrote out of boredom in uni. Draws a graph of processor, memory and storage useage mimicking the Windows Task Manager's "Performance" tab. 
+    A very basic python script I wrote out of boredom in uni. Draws a graph of processor, memory and storage useage (badly) mimicking the Windows Task Manager's "Performance" tab. 
 
 </div>
