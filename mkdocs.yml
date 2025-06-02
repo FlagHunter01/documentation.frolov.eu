@@ -24,6 +24,7 @@ nav:
       - DMARC: linux/mail/dmarc.md
     - Monitoring:
       - linux/monitoring/index.md
+      - fail2ban: linux/monitoring/f2b.md
       - Prometheus & Grafana:
         - linux/monitoring/prom/index.md
         - Basic configuration: linux/monitoring/prom/config.md
