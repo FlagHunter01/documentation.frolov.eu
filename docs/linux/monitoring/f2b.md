@@ -5,7 +5,7 @@ description: Ban suspicious IPs based on logged activity.
 
 Ban suspicious IPs based on logged activity. 
 
-## Instalation
+## Installation
 
 ```
 apt install fail2ban
@@ -42,7 +42,7 @@ All it needs is to have inside is:
 failregex = ... <HOST> ...
 ```
 
-Use "normal" regex. <HOST> will match an IP adress or hostname, it is mandatory because this is what f2b uses to ban IPs.   
+Use "normal" regex. `<HOST>` will match an IP address or hostname, it is mandatory because this is what f2b uses to ban IPs.   
 
 For example, you can match the log `[123.45.6.789] failed authentication` with the following filter:
 
