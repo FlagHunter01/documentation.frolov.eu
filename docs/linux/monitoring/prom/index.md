@@ -21,3 +21,5 @@ Guides and hacks about Prometheus & Grafana
     ---
 
     Avoid tedious exporter creation by sneaking your custom metrics into the existing node_exporter !
+
+</div>
