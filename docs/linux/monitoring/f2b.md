@@ -54,4 +54,18 @@ failregex = ^\[<HOST>\] failed authentication$
 
 Reload f2b for changes to take effect.
 
-!!! warning "Missing `fail2ban-regex`"
+## Checking that it works
+
+You can check that your filter works by running the following command:
+
+```
+fail2ban-regex <log file path> <filter path>
+```
+
+The output will show expressions that worked with the quantity of hits, and will hide the expressions that didn't have any hits. 
+
+You can check how many IPs are suspicious and how many of them are banned on a per-filter basis using:
+
+```
+fiail2ban-client status <filter name>
+```
